@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/navigation_graph"
+    app:startDestination="@id/splashFragment">
+
+    <fragment
+        android:id="@+id/splashFragment"
+        android:name="com.example.memoryGame.SplashFragment"
+        android:label="SplashFragment" >
+        <action
+            android:id="@+id/action_splashFragment_to_gameLevelFragment"
+            app:destination="@id/gameLevelFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/gameLevelFragment"
+        android:name="com.example.memoryGame.GameLevelFragment"
+        android:label="GameLevelFragment" >
+        <argument
+            android:name="CompletLavel"
+            app:argType="string"
+            android:defaultValue="14"/>
+        <action
+            android:id="@+id/action_gameLevelFragment_to_addNumberFragment"
+            app:destination="@id/addNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/addNumberFragment"
+        android:name="com.example.memoryGame.game.AddNumberFragment"
+        android:label="AddNumberFragment" >
+        <argument
+            android:name="lavel"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_addNumberFragment_to_rememberOfNumber"
+            app:destination="@id/rememberOfNumber" />
+    </fragment>
+    <fragment
+        android:id="@+id/rememberOfNumber"
+        android:name="com.example.memoryGame.game.RememberOfNumber"
+        android:label="RememberOfNumber" >
+        <argument
+            android:name="lavel"
+            app:argType="string"/>
+        <argument
+            android:name="number"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_rememberOfNumber_to_guessNumberFragment"
+            app:destination="@id/guessNumberFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/guessNumberFragment"
+        android:name="com.example.memoryGame.game.GuessNumberFragment"
+        android:label="GuessNumberFragment" >
+
+        <argument
+            android:name="lavel"
+            app:argType="string"/>
+        <argument
+            android:name="boxList"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_guessNumberFragment_to_resultFragment"
+            app:destination="@id/resultFragment" />
+    </fragment>
+    <fragment
+        android:id="@+id/resultFragment"
+        android:name="com.example.memoryGame.game.ResultFragment"
+        android:label="ResultFragment" >
+        <argument
+            android:name="lavel"
+            app:argType="string"/>
+        <argument
+            android:name="resultList"
+            app:argType="string"/>
+        <action
+            android:id="@+id/action_resultFragment_to_addNumberFragment"
+            app:destination="@id/addNumberFragment" />
+        <action
+            android:id="@+id/action_resultFragment_to_gameLevelFragment"
+            app:destination="@id/gameLevelFragment" />
+    </fragment>
+</navigation>

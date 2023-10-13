@@ -1,0 +1,22 @@
+<resources>
+    <string name="app_name">Memory Game</string>
+    <string name="about_game">About Game</string>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="level">Game Level</string>
+    <string name="nav_open">Open</string>
+    <string name="nav_close">Close</string>
+    <string name="game">Memory Game</string>
+    <string name="result">Result</string>
+    <string name="next_level">Next Level</string>
+    <string name="game_dis"><big><b>Memory Game</b></big> A game is a structured form of play, usually undertaken for entertainment or fun, and sometimes used as an educational tool.</string>
+    <string name="info"><big><b>1.</b></big>You can only one digit add Numeric Number.
+        \n
+        \n<font><big><b>Level 1:</b></big></font> 2 to 4 and Your Total score should be 2 after you can play level 2.\n
+        \n<font><big><b>Level 2:</b></big></font> 5 to 7 and Your Total score should be 8 after you can play level 3 \n
+        \n<font><big><b>Level 3:</b></big></font> 8 and 9 and Your Total score should be 12.\n
+        \n<big><b>2.</b></big> Remember the numbers in your mind.\n
+        \n<big><b>3.</b></big> Add memorized numbers. \n
+        \n<big><b>4.</b></big> You can show your Total Score😊.
+    </string>
+</resources>

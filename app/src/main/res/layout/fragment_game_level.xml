@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="@drawable/number_games">
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtLevel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="250dp"
+        android:text="@string/level"
+        android:gravity="center"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLevel1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="20dp"
+        android:text="Level 1"
+        android:elevation="5dp"
+        android:textColor="@color/yellow"
+        android:textStyle="bold"
+        android:background="@color/white"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/txtLevel"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLevel2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Level 2"
+        android:elevation="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:background="@color/white"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btnLevel1"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:visibility="visible"
+        android:id="@+id/imgLockLevel2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:elevation="5dp"
+        android:src="@drawable/baseline_lock_24"
+        app:layout_constraintBottom_toBottomOf="@id/btnLevel2"
+        app:layout_constraintEnd_toEndOf="@id/btnLevel2"
+        app:layout_constraintTop_toTopOf="@id/btnLevel2"/>
+
+    <androidx.appcompat.widget.AppCompatButton
+        android:id="@+id/btnLevel3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="Level 3"
+        android:elevation="5dp"
+        android:textStyle="bold"
+        android:textColor="@color/yellow"
+        android:background="@color/white"
+        android:layout_marginHorizontal="30dp"
+        app:layout_constraintTop_toBottomOf="@id/btnLevel2"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
+    <androidx.appcompat.widget.AppCompatImageView
+        android:visibility="visible"
+        android:id="@+id/imgLockLevel3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="5dp"
+        android:elevation="5dp"
+        android:src="@drawable/baseline_lock_24"
+        app:layout_constraintBottom_toBottomOf="@id/btnLevel3"
+        app:layout_constraintEnd_toEndOf="@id/btnLevel3"
+        app:layout_constraintTop_toTopOf="@id/btnLevel3"/>
+
+
+    <androidx.appcompat.widget.AppCompatTextView
+        android:id="@+id/txtInfo"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginBottom="10dp"
+        android:text="Game Information"
+        android:textStyle="bold"
+        android:textSize="20sp"
+        android:gravity="center"
+        android:drawableEnd="@drawable/baseline_info_24"
+        android:textColor="@android:color/holo_blue_light"
+        android:layout_marginHorizontal="20dp"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
